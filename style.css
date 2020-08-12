@@ -226,7 +226,7 @@ th, td {
   
 #img-wrap {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
   margin: 0;
 }
