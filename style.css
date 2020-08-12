@@ -227,7 +227,7 @@ th, td {
   
 #img-wrap {
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: 100%;
   margin: 0;
 }
