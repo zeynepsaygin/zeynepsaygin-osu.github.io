@@ -216,14 +216,21 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
-  .img-wrap {
+#labphoto {
+  width: 200px;
+  height: 150px;
   position: relative;
   display: inline-block;
   overflow: hidden;
-    /*display: block;*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: 0;
+}
+
+#img_wrap {
+  display: block;
+  position: absolute;
   top: 50%;
   left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
 }
