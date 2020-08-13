@@ -37,11 +37,16 @@ h3 {
      height: 100%;
 }
 .imgBox img {
+  padding:5px;
+  display: inline;
   width:auto;
-  max-width:80%;
-  max-height: 100vh;
+  max-height: 80%;
+  /*max-width:80%;
+  max-height: 80%;*/
   margin: auto;
+  float: left;
 }
+
 .nav{
 
     border-width:1px 0;
