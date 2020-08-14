@@ -66,16 +66,13 @@ h3 {
   margin: auto;  
 }
 .Zeyimg {
-  padding: 5px;
-     display: inline-block;
+  padding: 10px;
+     display: block;
      height: 80%;
-  margin-left:0%;
-  margin-right:2%;
-    float: left;  
 }
 .Zeyimg img {
-  padding: 5px;
-  display: inline-block;
+  padding: 10px;
+  display: block;
   /*width:auto;*/
   width: 200px;
   height: 200px;
