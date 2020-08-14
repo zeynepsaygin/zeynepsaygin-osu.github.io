@@ -49,21 +49,18 @@ h3 {
   float: left;  
 }
 .Alumnimg {
-  padding: 5px;
-     display: inline-block;
+  padding: 10px;
+     display: inline-flex;
      height: 80%;
-  margin: 10px;
-  float: left;
 }
 .Alumnimg img {
-  padding: 10px;
+  padding: 5px;
   display: inline-block;
   /*width:auto;*/
   width: 190px;
   height: 190px;
   max-width: 80%;
   max-height: 80%;
-  margin: auto;  
 }
 .Zeyimg {
   padding: 10px;
