@@ -48,13 +48,13 @@ h3 {
   margin: auto;
   float: left;  
 }
-.Alumnimage {
+.Alumnimg {
   padding: 10px;
      display: inline-block;
      height: 80%;
   margin: auto;
 }
-.Alumnimage img {
+.Alumnimg img {
   padding: 10px;
   display: inline-block;
   /*width:auto;*/
