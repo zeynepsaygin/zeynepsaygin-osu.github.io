@@ -63,6 +63,8 @@ h3 {
   max-height: 80%;
 }
 .Zeyimg {
+  margin-left:0;
+  margin-right:auto;
   padding: 10px;
      display: block;
      height: 80%;
