@@ -254,19 +254,18 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
-#labphoto {
+  .LabPhoto {
+    width: 30vw;
+  height: 30vw;
+  float: left;
+  margin-left: 10px;
+  }
+/*#labphoto {
   display: inline-block;
   width: 100%;
   position: relative;
   display: block;
   overflow: hidden;
   margin: 0;
-}
+}*/
   
-#img-wrap {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-}
