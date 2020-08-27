@@ -261,7 +261,7 @@ th, td {
    text-align: center;
    position: relative;
   }
-.LabPhoto > img {
+.LabPhoto img {
   display: block;
   position: absolute;
   top: 50%;
