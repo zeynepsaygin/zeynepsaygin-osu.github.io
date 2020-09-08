@@ -254,7 +254,6 @@ th, td {
 }
  .LabPhoto {
    width: calc(100% - 250px); 
-    background-color: #F00; 
     height: 200px; 
     float: left;
   }
