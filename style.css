@@ -252,14 +252,15 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
- .LabPhoto {
+/* .LabPhoto {
    width: auto; 
     height: 450px; 
     text-align: center;
-  }
-.LabPhoto img {
+  }*/
+#LabPhoto {
   max-width: 100%;
   max-height: 100%;
+  text-align: center;
   display: block
 }
   
