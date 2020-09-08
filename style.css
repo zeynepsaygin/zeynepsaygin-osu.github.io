@@ -254,7 +254,7 @@ th, td {
 }
  .LabPhoto {
    width: auto; 
-    height: auto; 
+    height: 450px; 
     text-align: center;
   }
 .LabPhoto img {
