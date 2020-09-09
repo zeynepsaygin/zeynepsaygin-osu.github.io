@@ -64,9 +64,9 @@ h3 {
 }
 .Zeyimg {
   padding: 10px;
-     display: inline-block;
+     display: block;
      height: 80%;
-  margin: auto;
+  margin: 5px;
      /*display: inline-block;
      height: 80%;
   margin-left:0;
@@ -81,7 +81,7 @@ h3 {
   height: 190px;
   max-width: 80%;
   max-height: 80%;
-  margin: auto;
+  margin: 5px;
   float: left;  
   
   
