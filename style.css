@@ -255,12 +255,13 @@ th, td {
 #LabPhoto {
   width: 80%;
   height: 350px;
-  padding: 0px;
-  margin: 0px;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
   }
 #LabPhotoImg {
-  display: inline-block;
-  margin: auto;
+  /*display: block;
+  margin: auto;*/
   max-width: 80%;
   max-height: 80%;
 }
