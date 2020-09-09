@@ -33,9 +33,10 @@ h3 {
 
 .imgBox {
      padding: 10px;
-     display: inline-block;
-     height: 80%;
+     /*display: inline-block;
+     height: 80%;*/
   margin: auto;
+  width: 100%
 }
 .imgBox img {
   padding: 10px;
@@ -50,8 +51,9 @@ h3 {
 }
 .Alumnimg {
   padding: 10px;
-     display: inline-flex;
-     height: 80%;
+     /*display: inline-flex;
+     height: 80%;*/
+  width: 100%
 }
 .Alumnimg img {
   padding: 5px;
@@ -64,8 +66,9 @@ h3 {
 }
 .Zeyimg {
   padding: 10px;
-     display: block;
-     height: 80%;
+  width: 100%;
+     /*display: block;
+     height: 80%;/*
   margin: 5px;
      /*display: inline-block;
      height: 80%;
