@@ -253,16 +253,13 @@ th, td {
   width: 77%;
 }
 #LabPhoto {
-  display: inline-block;
-  /*width: 80%;
+  width: 80%;
   height: 350px;
-  padding: 20px;
-  margin: 5px;
-  text-align: center;*/
+  
+  text-align: center;
   }
 #LabPhotoImg {
-  /*display: block;
-  margin: auto;*/
+  margin: auto;
   max-width: 80%;
   max-height: 80%;
 }
