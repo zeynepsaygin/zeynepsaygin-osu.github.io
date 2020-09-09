@@ -259,7 +259,7 @@ th, td {
   margin: 0px;
   }
 #LabPhotoImg {
-  display: block;
+  display: inline-block;
   margin: auto;
   max-width: 80%;
   max-height: 80%;
