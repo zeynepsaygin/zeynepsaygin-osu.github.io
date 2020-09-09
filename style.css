@@ -254,10 +254,9 @@ th, td {
 }
 .LabPhoto {
   width: 100%;
-  height: 416px;
+  height: 500px;
   padding: 20px;
   margin: 5px;
-   text-align: center;
   }
 .LabPhoto img {
   display: block;
