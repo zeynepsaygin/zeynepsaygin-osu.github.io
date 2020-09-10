@@ -253,20 +253,18 @@ th, td {
   max-height: 80%;
   margin: 5px;
   float: left;  
-}
+}*/
  
-.Intro {
-  position: absolute;
-  float: left;
-  max-width: 300%;
-   margin: auto;
-  display: inline-block;
+.Intro p h4 {
+  padding: 5px;
+  margin: 5px
+  }
  
-.Name {
+/*.Name {
   font-weight: bold;
     font-size: 200%;
-  }*/
-/*.MemberBox {
+  }
+.MemberBox {
     padding: 5px;
     margin: 5px;
     height: 250px;
