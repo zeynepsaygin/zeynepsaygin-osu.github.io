@@ -224,6 +224,7 @@ th, td {
 }*/
   
  .ZeyBox {
+   position: relative;
    padding: 10px;
   width: 100%;
      display: block;
@@ -238,6 +239,7 @@ th, td {
       display: flex
 }
 .ZeyImg {
+  position: absolute;
   float: left;
   height: 80%;
    max-width: 50%;
@@ -255,6 +257,7 @@ th, td {
 }
  
 .Intro {
+  position: absolute;
   float: left;
   max-width: 50%;
    margin: auto;
