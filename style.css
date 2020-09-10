@@ -202,7 +202,7 @@ th, td {
   width: 77%;
 }
  
-  
+ /* 
   .LabPicBox {
     padding: 5px;
     margin: 5px;
@@ -221,7 +221,7 @@ th, td {
     margin: auto;
   max-width: 80%;
   max-height: 80%;
-}
+}*/
   
  .ZeyBox {
     padding: 5px;
@@ -229,35 +229,23 @@ th, td {
     height: 250px;
   width: 100%
 }
-/*.ZeyImg {
-  float: left;
-      height: 80%;
-  width: 100%
-}*/
-.ZeyImg img {
+.ZeyImg {
   display: inline-block;
-  float: left;
-  height: 300px;
-   /* padding: 5px;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;*/
+  height: auto;
 }
- 
+.ZeyImg img {
+  float: left;
+  width: 50%;
+}
  
 .Intro {
   display: inline-block;
-  margin-left: 1rem;
+  height: auto;
 }
-  .Intro p {
-   margin-left: 1rem;
-  }
+ 
 .Name {
-  margin-left: 1rem;
-    font-weight: bold;
-    font-size: 200%
-}
+  display: inline-block;
+  height: auto;
 
 .MemberBox {
     padding: 5px;
@@ -266,17 +254,12 @@ th, td {
   width: 100%
 }
 .MemberImg {
-  float: left;
-      height: 80%;
-  width: 100%
+  display: block;
+  height: auto;
 }
 .MemberImg img {
-    padding: 10px;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;
-  float: left; 
+    float: left;
+  width: 50%;
 }
 .AlumniBox {
     padding: 5px;
@@ -285,17 +268,12 @@ th, td {
   width: 100%
 }
 .Alumnimg {
-    float: left;
-      height: 80%;
-  width: 100%
+    display: inline-block;
+  height: auto;
 }
 .Alumnimg img {
-    padding: 10px;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;
-  float: left;
+    float: left;
+  width: 50%;
 }
 
 /*  
