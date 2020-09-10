@@ -230,22 +230,24 @@ th, td {
   width: 100%
 }
 .ZeyImg {
-  display: inline-block;
-  height: auto;
+  float: left;
+  /*display: inline-block;
+  height: auto;*/
 }
-.ZeyImg img {
+/*.ZeyImg img {
   float: left;
   width: 50%;
-}
+}*/
  
 .Intro {
-  display: inline-block;
-  height: auto;
+  float: left
+  /*display: inline-block;
+  height: auto;*/
 }
  
-.Name {
+/*.Name {
   display: inline-block;
-  height: auto;
+  height: auto;*/
 
 .MemberBox {
     padding: 5px;
