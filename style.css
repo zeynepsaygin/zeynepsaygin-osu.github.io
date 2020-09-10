@@ -201,18 +201,7 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
-  
-  img,
-p {
-  display: inline-block;
-}
-img {
-  float: left;
-  height: 300px;
-}
-p {
-  margin-left: 1rem;
-}
+ 
   
   .LabPicBox {
     padding: 5px;
@@ -245,27 +234,27 @@ p {
       height: 80%;
   width: 100%
 }*/
-.ZeyImg img, p {
+.ZeyImg img {
   display: inline-block;
-  
+  float: left;
+  height: 300px;
    /* padding: 5px;
   display: block;
   max-width: 80%;
   max-height: 80%;
   margin: auto;*/
 }
- .ZeyImg img {
-   float: left;
-  height: 300px;
-  }
- .ZeyImg p {
-   margin-left: 1rem;
-  }
+ 
+ 
 .Intro {
   display: inline-block;
   margin-left: 1rem;
 }
+  .Intro p {
+   margin-left: 1rem;
+  }
 .Name {
+  margin-left: 1rem;
     font-weight: bold;
     font-size: 200%
 }
