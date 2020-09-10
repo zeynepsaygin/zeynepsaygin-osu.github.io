@@ -255,9 +255,13 @@ th, td {
   float: left;  
 }*/
  
-.Intro p h4 {
+.Intro {
   padding: 5px;
-  margin: 5px
+  margin: 5px;
+  }
+  .HEAD {
+    padding: 5px;
+  margin: 5px;
   }
  
 /*.Name {
