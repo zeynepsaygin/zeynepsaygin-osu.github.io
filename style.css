@@ -214,6 +214,7 @@ th, td {
       height: 80%;
   width: 100%
 }
+    
 .LabPicImg img {
     display: block;
     margin: auto;
@@ -240,7 +241,10 @@ th, td {
   margin: auto;
 }
 .Intro {
-    margin-left: 25px
+      margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .Name {
     font-weight: bold;
