@@ -232,8 +232,6 @@ th, td {
 .ZeyImg img {
     padding: 10px;
   display: block;
-  width: 250px;
-  height: 250px;
   max-width: 80%;
   max-height: 80%;
   margin: auto;
@@ -262,8 +260,6 @@ th, td {
 .MemberImg img {
     padding: 10px;
   display: block;
-  width: 190px;
-  height: 190px;
   max-width: 80%;
   max-height: 80%;
   margin: auto;
