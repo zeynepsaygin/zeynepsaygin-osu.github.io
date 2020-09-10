@@ -203,7 +203,7 @@ th, td {
 }
   
  .ZeyBox {
-    margin: 20px 20px 0 0;  
+    margin: 10px 10px 0 0;  
     border: 5px solid #333;
     overflow: auto
 }
@@ -211,7 +211,11 @@ th, td {
     float: left
 }
 .ZeyImg img {
-    display: block
+    display: block;
+      width: 190px;
+  height: 190px;
+  max-width: 80%;
+  max-height: 80%;
 }
 .Intro {
     margin-left: 210px
@@ -222,7 +226,7 @@ th, td {
 }
 
 .MemberBox {
-    margin: 20px 20px 0 0;  
+    margin: 10px 10px 0 0;  
     border: 5px solid #333;
     overflow: auto
 }
@@ -230,10 +234,14 @@ th, td {
     float: left
 }
 .MemberImg img {
-    display: block
+    display: block;
+    width: 190px;
+  height: 190px;
+  max-width: 80%;
+  max-height: 80%;
 }
 .AlumniBox {
-    margin: 20px 20px 0 0;  
+    margin: 10px 10px 0 0;  
     border: 5px solid #333;
     overflow: auto
 }
@@ -241,7 +249,11 @@ th, td {
     float: left
 }
 .Alumnimg img {
-    display: block
+    display: block;
+    width: 190px;
+    height: 190px;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 /*  
