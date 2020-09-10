@@ -224,32 +224,26 @@ th, td {
 }*/
   
  .ZeyBox {
-    padding: 5px;
-    margin: 5px;
-    height: 250px;
-  width: 100%
+     margin: 20px 20px 0 0;  
+    overflow: auto
 }
 .ZeyImg {
-  float: left;
-  /*display: inline-block;
-  height: auto;*/
-}
-/*.ZeyImg img {
-  float: left;
-  width: 50%;
-}*/
- 
-.Intro {
   float: left
   /*display: inline-block;
   height: auto;*/
 }
+.ZeyImg img {
+   display: block
+}
  
-/*.Name {
-  display: inline-block;
-  height: auto;*/
+.Intro {
+   margin-left: 210px
+ 
+.Name {
+  font-weight: bold;
+    font-size: 200%
 
-.MemberBox {
+/*.MemberBox {
     padding: 5px;
     margin: 5px;
     height: 250px;
