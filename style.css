@@ -203,12 +203,16 @@ th, td {
 }
   
   .LabPicBox {
-    margin: 10px 10px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+  width: 100%
+    
 }
 .LabPicImg {
-    float: left
+    float: left;
+      height: 80%;
+  width: 100%
 }
 .LabPicImg img {
     display: block;
@@ -218,24 +222,22 @@ th, td {
 }
   
  .ZeyBox {
-    margin: 10px 10px 0 0;
-    border: 5px solid #333;
-    overflow: auto
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+  width: 100%
 }
 .ZeyImg {
-  padding: 10px;
-     display: block;
-     height: 80%;
-  margin: auto;
+  float: left;
+      height: 80%;
   width: 100%
 }
 .ZeyImg img {
-    padding: 10px;
+    padding: 5px;
   display: block;
   max-width: 80%;
   max-height: 80%;
   margin: auto;
-  float: left;
 }
 .Intro {
     margin-left: 25px
@@ -246,15 +248,14 @@ th, td {
 }
 
 .MemberBox {
-    margin: 10px 10px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+  width: 100%
 }
 .MemberImg {
-  padding: 10px;
-     display: block;
-     height: 80%;
-  margin: auto;
+  float: left;
+      height: 80%;
   width: 100%
 }
 .MemberImg img {
@@ -266,22 +267,19 @@ th, td {
   float: left; 
 }
 .AlumniBox {
-    margin: 10px 10px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+  width: 100%
 }
 .Alumnimg {
-    padding: 10px;
-     display: block;
-     height: 80%;
-  margin: auto;
+    float: left;
+      height: 80%;
   width: 100%
 }
 .Alumnimg img {
     padding: 10px;
   display: block;
-  width: 190px;
-  height: 190px;
   max-width: 80%;
   max-height: 80%;
   margin: auto;
