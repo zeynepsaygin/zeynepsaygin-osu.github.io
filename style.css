@@ -228,14 +228,14 @@ th, td {
    width: 100%;
    padding: 5px;
      margin: 5px;  
-    overflow: auto;
+    /*overflow: auto;*/
       display: flex
 }
 .ZeyImg {
   float: left;
-  height: 270px;
+  height: 80%;
    width: 50%;
-  
+  margin: auto
   /*display: inline-block;*/
   /*height: auto;*/
 }
@@ -249,7 +249,7 @@ th, td {
 .Intro {
   float: left;
   width: 50%;
-   margin-left: 25px;
+   margin: auto;
   /*display: inline-block;*/
  
 .Name {
