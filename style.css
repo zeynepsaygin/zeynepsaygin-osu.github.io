@@ -233,11 +233,13 @@ th, td {
   height: auto;*/
 }
 .ZeyImg img {
-   display: block
+   display: block;
+     /*float: left*/
 }
  
 .Intro {
-   margin-left: 210px
+  /*float: left;*/
+   margin-left: 25px
  
 .Name {
   font-weight: bold;
