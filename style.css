@@ -223,7 +223,7 @@ th, td {
   max-height: 80%;
 }*/
   
- .ZeyBox {
+ /*.ZeyBox {
    position: relative;
    padding: 10px;
   width: 100%;
@@ -231,11 +231,11 @@ th, td {
      height: 80%;
   margin: 5px;
  
-   /*height: 300px;
+   height: 300px;
    width: 100%;
    padding: 5px;
      margin: 5px;  
-    overflow: auto;*/
+    overflow: auto;
 }
 .ZeyImg {
   position: absolute;
@@ -244,7 +244,7 @@ th, td {
    max-width: 30%;
   margin: auto;
   display: inline-block;
-  /*height: auto;*/
+  height: auto;
 }
 .ZeyImg img {
   padding: 10px;
@@ -264,8 +264,8 @@ th, td {
  
 .Name {
   font-weight: bold;
-    font-size: 200%
-  }
+    font-size: 200%;
+  }*/
 /*.MemberBox {
     padding: 5px;
     margin: 5px;
