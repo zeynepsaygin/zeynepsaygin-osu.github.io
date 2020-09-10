@@ -236,13 +236,12 @@ th, td {
    padding: 5px;
      margin: 5px;  
     overflow: auto;*/
-      display: flex
 }
 .ZeyImg {
   position: absolute;
   float: left;
   height: 80%;
-   max-width: 50%;
+   max-width: 30%;
   margin: auto;
   display: inline-block;
   /*height: auto;*/
@@ -259,7 +258,7 @@ th, td {
 .Intro {
   position: absolute;
   float: left;
-  max-width: 50%;
+  max-width: 300%;
    margin: auto;
   display: inline-block;
  
