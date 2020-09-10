@@ -235,18 +235,18 @@ th, td {
   height: 270px;
    width: 270px;
   
-  /*display: inline-block;
-  height: auto;*/
+  display: inline-block;
+  /*height: auto;*/
 }
 .ZeyImg img {
   height: 250px;
    width: 250px;
-   display: block;
+   display: inline-block;
      /*float: left*/
 }
  
 .Intro {
-  /*float: left;*/
+  float: left;
    margin-left: 25px
  
 .Name {
