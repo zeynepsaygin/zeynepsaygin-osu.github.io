@@ -234,7 +234,7 @@ th, td {
 .ZeyImg {
   float: left;
   height: 270px;
-   width: 270px;
+   width: 50%;
   
   /*display: inline-block;*/
   /*height: auto;*/
@@ -248,6 +248,7 @@ th, td {
  
 .Intro {
   float: left;
+  width: 50%;
    margin-left: 25px;
   /*display: inline-block;*/
  
