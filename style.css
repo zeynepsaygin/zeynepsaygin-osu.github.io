@@ -236,20 +236,20 @@ th, td {
   height: 270px;
    width: 270px;
   
-  display: inline-block;
+  /*display: inline-block;*/
   /*height: auto;*/
 }
 .ZeyImg img {
   height: 250px;
    width: 250px;
-   display: inline-block;
+   /*display: inline-block;*/
    float: left
 }
  
 .Intro {
   float: left;
    margin-left: 25px;
-  display: inline-block;
+  /*display: inline-block;*/
  
 .Name {
   font-weight: bold;
