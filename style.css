@@ -203,12 +203,10 @@ th, td {
 }
 
   #HEAD {
-    margin-right: 25px;
-    margin-left: 25px;
+    padding: 5px;
   }
   #Intro {
-    margin-right: 25px;
-    margin-left: 25px;
+    padding: 0px;
   }
  
  /* 
