@@ -201,9 +201,14 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
-.container-fluid p, h4 {
-  padding: 5px;
-  margin: 5px;
+
+  #HEAD {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  #Intro {
+    margin-right: 25px;
+    margin-left: 25px;
   }
  
  /* 
