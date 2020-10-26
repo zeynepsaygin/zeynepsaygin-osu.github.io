@@ -201,12 +201,3 @@ th, td {
   margin: 50px auto 0px auto;
   width: 77%;
 }
-  
-  video {
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
