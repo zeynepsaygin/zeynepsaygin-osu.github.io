@@ -215,19 +215,19 @@ align-items: center;
   left: 50%;
   transform: translate(-50%,-50%);
   }
- .coolest span{
+ .coolest span:first-child {
    display: inline-block;
    font-weight: bold;
    animation: mover 6s linear indifinite;
   }
-  @keyframes mover{
-    0%{
+  @keyframes mover {
+    0% {
       text-shadow: 0 0 30px rgba(50,50,50,0);
     }
-    50%{
+    50% {
       text-shadow: 0 0 30px rgba(50,50,50,0.30);
     }
-    100%{
+    100% {
       text-shadow: 0 0 30px rgba(50,50,50,0.0);
   }
 }
