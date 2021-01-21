@@ -218,9 +218,9 @@ align-items: center;
  .coolest span:first-child {
    display: inline-block;
    font-weight: bold;
-   animation: mover 6s linear indifinite;
+   animation: coolest 6s linear indifinite;
   }
-  @keyframes mover {
+  @keyframes coolest {
     0% {
       text-shadow: 0 0 30px rgba(50,50,50,0);
     }
