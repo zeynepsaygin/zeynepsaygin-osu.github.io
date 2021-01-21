@@ -208,6 +208,10 @@ flex-direction: column;
 align-items: center;
 }
   #coolest {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 15%;
+    margin-left: 15%;
     animation-duration: 3s;
   animation-name: slidein;
   }
