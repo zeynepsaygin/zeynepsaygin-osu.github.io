@@ -72,7 +72,7 @@
 		
 		<center><p><font size="4"><strong>Please click on the brains below!</strong></font></a></center>
 		
-		<center> <img src="/favicon/Scanner_Sound_Brain1.png" style="width:15%; height:15%;"/> <img src="/favicon/Scanner_Sound_Brain2.png" style="width:15%; height:15%;"/><img src="/favicon/Scanner_Sound_Brain3.png" style="width:15%; height:15%;"/></center>
+		<center> <img id="MPRAGE" src="/favicon/Scanner_Sound_Brain1.png" style="width:15%; height:15%;" onclick="playAudio('/favicon/MPRAGE_short.wav')"/> <img id="EPI" src="/favicon/Scanner_Sound_Brain2.png" style="width:15%; height:15%;" onclick="playAudio('/favicon/EPI_short.wav')"/><img id="DWI" src="/favicon/Scanner_Sound_Brain3.png" style="width:15%; height:15%; "onclick="playAudio('/favicon/DWI_short.wav')"/></center>
 
 	<div/>
 </br>
@@ -142,6 +142,12 @@
 
 	<center><a href="https://www.facebook.com/ZLabOSU/" target="_blank"><img src="newfacebook.png" width="22" height="22"/></a>
 	<a href="https://twitter.com/Zlab_OSU" target="_blank"><img src="twitter.png" width="20" height="20"/></a></center>
+	<script>
+	function playAudio(url) {
+  new Audio(url).play();
+}	
+	
+</script>
 
     </body>
   </head>
