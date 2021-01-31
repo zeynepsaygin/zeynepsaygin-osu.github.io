@@ -151,8 +151,9 @@
 	<a href="https://twitter.com/Zlab_OSU" target="_blank"><img src="twitter.png" width="20" height="20"/></a></center>
 	<script>
 	function playAudio(url) {
+		$(this).pause();
 		var scansound= new Audio(url);
-		if (scansound.paused) {
+		if (!scansound.paused) {
         	scansound.play();
     }else{
         scansound.currentTime = 0
