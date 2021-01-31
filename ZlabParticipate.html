@@ -153,6 +153,7 @@
 	function playAudio(url) {
 		if (url === '/favicon/MPRAGE_short.wav') {
 			var scansound1 = new Audio('/favicon/MPRAGE_short.wav');
+			scansound1.play();
 			var scansound2 = new Audio('/favicon/EPI_short.wav');
 			scansound2.pause();
 			var scansound3 = new Audio('/favicon/DTI_short.wav');
@@ -160,12 +161,14 @@
 		
 		} else if (url === '/favicon/EPI_short.wav') {
 			var scansound2= new Audio(url);
+			scansound2.play();
 			var scansound1 = new Audio('/favicon/MPRAGE_short.wav');
 			scansound1.pause();
 			var scansound3 = new Audio('/favicon/DTI_short.wav');
 			scansound3.pause();
 		} else if (url === '/favicon/DTI_short.wav') {
 			var scansound3= new Audio(url);
+			scansound3.play();
 			var scansound1 = new Audio('/favicon/MPRAGE_short.wav');
 			scansound1.pause();
 			var scansound2 = new Audio('/favicon/EPI_short.wav');
