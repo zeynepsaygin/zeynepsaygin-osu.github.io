@@ -153,7 +153,7 @@
 	function playAudio(url) {
 		var scansound= new Audio(url);
 		if (scansound.paused) {
-        	audio.play();
+        	scansound.play();
     }else{
         scansound.currentTime = 0
     }
