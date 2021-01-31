@@ -156,6 +156,7 @@
   			audio.style.display = "none"; //added to fix ios issue
  			audio.autoplay = false; //avoid the user has not interacted with your page issue
   			document.body.appendChild(audio);
+			audio.play();
 			document.addEventListener('play', function(e){
     			var audios = document.getElementsByTagName('audio');
     			for(var i = 0, len = audios.length; i < len;i++){
