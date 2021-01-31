@@ -151,12 +151,25 @@
 	<a href="https://twitter.com/Zlab_OSU" target="_blank"><img src="twitter.png" width="20" height="20"/></a></center>
 	<script>
 	function playAudio(url) {
-		$(this).pause();
-		var scansound= new Audio(url);
-		if (!scansound.paused) {
-        	scansound.play();
-    }else{
-        scansound.currentTime = 0
+		if (url == '/favicon/MPRAGE_short.wav') {
+			scansound2.pause();
+			scansound3.pause();
+		var scansound1= new Audio(url);
+		} else if (url == '/favicon/EPI_short.wav') {
+			scansound1.pause();
+			scansound3.pause();
+		var scansound2= new Audio(url);
+		} else if (url == '/favicon/DTI_short.wav') {
+			scansound1.pause();
+			scansound2.pause();
+		var scansound3= new Audio(url);
+		}
+			
+		#var scansound= new Audio(url);
+		#if (scansound.paused) {
+        	#scansound.play();
+    #}else{
+     #   scansound.currentTime = 0
     }
 }	
 	
