@@ -154,9 +154,12 @@
 		var scansound1 = new Audio('/favicon/MPRAGE_short.wav');
 		var scansound2 = new Audio('/favicon/EPI_short.wav');
 		var scansound3 = new Audio('/favicon/DTI_short.wav');
-		if (url === '/favicon/MPRAGE_short.wav') {
-			
-			scansound1.play();
+		/*if (url === '/favicon/MPRAGE_short.wav') {*/
+			scansound1.paused ? scansound1.play() : scansound1.pause();
+			scansound2.paused ? scansound2.play() : scansound2.pause();
+			scansound3.paused ? scansound3.play() : scansound3.pause();
+	}
+			/*scansound1.play();
 			
 			document.getElementByName(scansound2).pause();
 			
