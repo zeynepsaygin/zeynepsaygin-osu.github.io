@@ -153,6 +153,7 @@
 		function playAudio(url){
 			var playing = document.getElementsByTagName('audio');
 			console.log(playing.length);
+			console.log(playing);
 			if(playing.length == 0) {
 			var audio = document.createElement('audio');
  			audio.src = url;
