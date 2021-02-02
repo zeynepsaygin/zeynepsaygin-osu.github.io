@@ -151,25 +151,29 @@
 	<a href="https://twitter.com/Zlab_OSU" target="_blank"><img src="twitter.png" width="20" height="20"/></a></center>
 	<script>
 		function playAudio(url){
+			var playing = document.getElementsByTagName('audio');
+			if(playing.length == 0) {
 			var audio = document.createElement('audio');
  			audio.src = url;
   			audio.style.display = "none";
  			audio.autoplay = false;
   			document.body.appendChild(audio);
 			audio.play();
-			document.addEventListener('play', function(e){
-    			var audios = document.getElementsByTagName('audio');
-    			for(var i = 0, len = audios.length; i < len;i++){
-        		if(audios[i] != e.target){
+			} else {
+			 if(playing.src == url){
+				playing.pause();
+			 } else {
+				 document.addEventListener('play', function(e){
+    				var audios = document.getElementsByTagName('audio');
+    				for(var i = 0, len = audios.length; i < len;i++){
+        			if(audios[i] != e.target){
 				audios[i].pause();
-			 }
-			}
-				if(!e.target.paused){
-				e.target.pause();
-				 e.target.currentTime = 0;
-			 }
-		}, true);
+			 	}
+				}
+				}, true);
 			
+			} 
+			}
 		}
 		
 
