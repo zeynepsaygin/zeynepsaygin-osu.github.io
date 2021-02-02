@@ -163,7 +163,9 @@
 			} else {
 				playing[0].pause();
 				playing[0].currentTime = 0;
+				playing[0].parentNode.removeChild(playing[0]);
 				playing = '';
+
 				/*console.log(audio.src);
 			 if(audio.src == url){
 				playing.pause();
