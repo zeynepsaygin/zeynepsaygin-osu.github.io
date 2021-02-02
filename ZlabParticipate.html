@@ -164,9 +164,9 @@
 				audios[i].pause();
 			 }
 			}
-				if(!audio.paused && audio == e.target){
-				audio.pause();
-				 audio.currentTime = 0;
+				if(!e.target.paused){
+				e.target.pause();
+				 e.target.currentTime = 0;
 			 }
 		}, true);
 			
