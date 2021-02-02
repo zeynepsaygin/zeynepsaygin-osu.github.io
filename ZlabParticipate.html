@@ -152,6 +152,7 @@
 	<script>
 		function playAudio(url){
 			var playing = document.getElementsByTagName('audio');
+			console.log(playing.length);
 			if(playing.length == 0) {
 			var audio = document.createElement('audio');
  			audio.src = url;
@@ -160,6 +161,7 @@
   			document.body.appendChild(audio);
 			audio.play();
 			} else {
+				console.log(playing.src);
 			 if(playing.src == url){
 				playing.pause();
 			 } else {
