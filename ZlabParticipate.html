@@ -161,8 +161,8 @@
   			document.body.appendChild(audio);
 			audio.play();
 			} else {
-				console.log(playing.src);
-			 if(playing.src == url){
+				console.log(audio.src);
+			 if(audio.src == url){
 				playing.pause();
 			 } else {
 				 document.addEventListener('play', function(e){
