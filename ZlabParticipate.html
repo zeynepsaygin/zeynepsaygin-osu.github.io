@@ -165,14 +165,13 @@
 			 }
 			}
 		}, true);
-			document.addEventListener('pause', function(e){
-    			var audios = document.getElementsByTagName('audio');
-    			for(var i = 0, len = audios.length; i < len;i++){
-        		if(audios[i] == e.target){
-				audios[i].pause();
-			 }
-			}
-		}, true);
+			var audiorest = document.getElementsByTagName('audio');
+			if (audiorest.paused) {
+        		audiorest.play();
+    			}else{
+        			audiorest.pause();
+        			audiorest.currentTime = 0
+    			}
 			
   			
 		}
