@@ -153,7 +153,6 @@
 		function playAudio(url){
 			var playing = document.getElementsByTagName('audio');
 			console.log(playing.length);
-			console.log(playing);
 			if(playing.length == 0) {
 			var audio = document.createElement('audio');
  			audio.src = url;
@@ -162,7 +161,9 @@
   			document.body.appendChild(audio);
 			audio.play();
 			} else {
-				console.log(audio.src);
+				playing.pause();
+				playing = '';
+				/*console.log(audio.src);
 			 if(audio.src == url){
 				playing.pause();
 			 } else {
@@ -175,7 +176,7 @@
 				}
 				}, true);
 			
-			} 
+			} */
 			}
 		}
 		
