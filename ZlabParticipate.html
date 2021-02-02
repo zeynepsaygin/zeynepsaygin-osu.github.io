@@ -164,16 +164,12 @@
 				audios[i].pause();
 			 }
 			}
+				if(!audio.paused && audio == e.target){
+				audio.pause();
+				 audio.currentTime = 0;
+			 }
 		}, true);
-			var audiorest = document.getElementsByTagName('audio');
-			if (audiorest.paused) {
-        		audiorest.play();
-    			}else{
-        			audiorest[0].pause();
-        			audiorest[0].currentTime = 0
-    			}
 			
-  			
 		}
 		
 
