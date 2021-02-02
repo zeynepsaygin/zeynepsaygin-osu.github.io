@@ -162,11 +162,11 @@
     			for(var i = 0, len = audios.length; i < len;i++){
         		if(audios[i] != e.target){
             		audios[i].pause();
-       			 }
-				if(audios[i] == e.target && !audios[i].paused) {
-				e.target.pause();
+       			 }else if(!audios[i].paused && audios[i] == e.target) {
+				audios[i].pause();
+			}
+				
 			 }
-    			}
 		}, true);
   			
 		}
