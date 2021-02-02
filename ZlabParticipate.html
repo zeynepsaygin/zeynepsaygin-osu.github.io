@@ -53,7 +53,7 @@
 
 <br />
 
-<center> <img src="laces.gif" style="width:15%; height:15%;"/> <img src="newdtizlab.gif" style="width:21%; height:21%;"> </center>
+<!-- <center> <img src="laces.gif" style="width:15%; height:15%;"/> <img src="newdtizlab.gif" style="width:21%; height:21%;"> </center> -->
 
 <br />
 	    <!-- Educational Video -->
@@ -160,7 +160,7 @@
 			document.addEventListener('play', function(e){
     			var audios = document.getElementsByTagName('audio');
     			for(var i = 0, len = audios.length; i < len;i++){
-        		if(audios[i] != e.target || audios[i] == e.target){
+        		if(audios[i] != e.target){
             		audios[i].pause();
        			 }
     			}
