@@ -1,404 +1,418 @@
 <!DOCTYPE html>
-<!--PEOPLE BIO PAGE--> 
-<html>
-  <head>
-	  
-<!---- Favicon ---->	  
-	 
-<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Z-Lab | People</title>
 
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-	  
-<!---- Favicon ---->	
-	  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
- 	<title>Z-Lab | People</title>
-	  
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
 
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Vollkorn, serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-family: Helvetica, sans-serif;
+      font-size: 65px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    /* Navigation styling */
+    ul.nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+    }
+    ul.nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    ul.nav li a {
+      display: block;
+      color: gray;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 12px;
+    }
+    ul.nav li a:hover {
+      color: #66e0ff;
+    }
+    ul.nav li a.active, ul.nav li a[style*="color: white"] {
+      color: white !important;
+      font-weight: bold;
+    }
 
-<link href="style.css" rel="stylesheet" type="text/css" />
+    /* Container for the pyramid */
+    .pyramid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    /* Each row in pyramid */
+    .pyramid-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+    }
+    /* Person card style */
+    .person-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+    }
+    .person-card img {
+      width: 250px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #66e0ff;
+    }
+    .person-info {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    .person-info a {
+      color: #66e0ff;
+      text-decoration: none;
+    }
+    .person-info a:hover {
+      text-decoration: underline;
+    }
+    /* Alumni grid */
+    .alumni-section {
+      max-width: 1100px;
+      margin: 0 auto 60px auto;
+    }
+    .alumni-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #66e0ff;
+    }
+    .alumni-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px 50px;
+    }
+    .alumni-card {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .alumni-card img {
+      width: 250px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #66e0ff;
+      margin-bottom: 10px;
+    }
+    /* Social media icons */
+    .social-icons {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .social-icons a img {
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
 
-	 
-<center><h1 style="font-size:65px; font-family: Helvetica;">Z-L<font size="60px;">AB</font></h1></center>
-	  
-<ul class="nav">
-  <li><a style="color: gray;" href="index.html"><font size="4">H</font>ome</a></li>
-  <li><a style="color: gray;" href="ZlabResearch.html"><font size="4">R</font>esearch</a></li>
-  <li><a style="color: gray;" href="ZlabParticipate.html"><font size="4">P</font>articipate</a></li>
-  <li><a style="color: white;" href="ZlabPeople.html"><font size="4">P</font>eople</a></li>
-  <li><a style="color: gray;" href="Zlabpublications.html"><font size="4">P</font>ublications</a></li>
-  <li><a style="color: gray;" href="ZlabResources.html"><font size="4">R</font>esources</a></li>
-  <li><a style="color: gray;" href="ZlabEducationalVideos.html"><font size="4">B</font>rainFacts</a></li>
-  <li><a style="color: gray;" href="ZlabNews.html"><font size="4">N</font>ews</a></li>
-  <li><a style="color: gray;" href="ZlabGallery.html"><font size="4">G</font>allery</a></li>
-  <li><a style="color: gray;" href="ZlabContactUs.html"><font size="4">C</font>ontact</a></li>
-  <li><a style="color: gray;" href="Donate.html"><font size="4">D</font>onate</a></li></ul>
-</ul>
+  <h1>Z-L<span style="font-size:60px;">AB</span></h1>
 
+  <ul class="nav">
+    <li><a href="index.html" style="color: gray;"><font size="4">H</font>ome</a></li>
+    <li><a href="ZlabResearch.html" style="color: gray;"><font size="4">R</font>esearch</a></li>
+    <li><a href="ZlabParticipate.html" style="color: gray;"><font size="4">P</font>articipate</a></li>
+    <li><a href="ZlabPeople.html" style="color: white;"><font size="4">P</font>eople</a></li>
+    <li><a href="Zlabpublications.html" style="color: gray;"><font size="4">P</font>ublications</a></li>
+    <li><a href="ZlabResources.html" style="color: gray;"><font size="4">R</font>esources</a></li>
+    <li><a href="ZlabEducationalVideos.html" style="color: gray;"><font size="4">B</font>rainFacts</a></li>
+    <li><a href="ZlabNews.html" style="color: gray;"><font size="4">N</font>ews</a></li>
+    <li><a href="ZlabGallery.html" style="color: gray;"><font size="4">G</font>allery</a></li>
+    <li><a href="ZlabContactUs.html" style="color: gray;"><font size="4">C</font>ontact</a></li>
+    <li><a href="Donate.html" style="color: gray;"><font size="4">D</font>onate</a></li>
+  </ul>
 
-    <body style="background-color:black; color:white; font-family: Vollkorn;"> 
+  <div class="pyramid-container">
+    <!-- Top: Zeynep -->
+    <div class="pyramid-row">
+      <div class="person-card">
+        <img src="LabPictures/zs_small.jpg" alt="Zeynep Saygin" />
+        <div class="person-info">
+          <strong>Zeynep Saygin, Ph.D.</strong><br />
+          P.I., Assistant Professor of Psychology<br />
+          Ph.D., Systems Neuroscience, MIT<br />
+          B.Sc., Neuroscience, Brown University<br />
+          Email: <a href="mailto:saygin.3@osu.edu"><em>saygin dot 3 at osu dot edu</em></a><br />
+          <a href="PublicationArticles/ZeynepMSaygin_CV-Jan2025.pdf" target="_blank">CV</a>
+        </div>
+      </div>
+    </div>
 
-<br />
-	    
-  <div class="row padding justify-content-left">
-    <div class="col-md-3">
-      <img src="LabPictures/zs_small.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-    <div class="col-md-9 align-self-start">
-	<div class="d-flex flex-column justify-content-left">
-		<div class="col-md-3 float-left">
-		Zeynep Saygin, Ph.D.<br />
-		P.I., Assistant Professor of Psychology <br />  
-		Ph.D., Systems Neuroscience, Massachusetts Institute of Technology (MIT)<br />
-		B.Sc., Neuroscience, Brown University<br />
-		Email: <a style="color:#66e0ff;" href="mailto:saygin.3@osu.edu"><em>saygin dot 3 at osu dot edu</em></a><br />
-		<a href="PublicationArticles/ZeynepMSaygin_CV-Jan2025.pdf" target="_blank" style="color:#66e0ff">CV</a>
-		</div>
-	</div>
-<br /><br />	
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/annaquatrale.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-		Anna Quatrale<br />
-			Research Coordinator<br />
-		B.A., Psychology, SUNY Geneseo<br />
-	Email: <a style="color:#66e0ff;" href="mailto:quatrale.1@osu.edu"><em>quatrale dot 1 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Quatrale.html" >Bio</a>
-		</div>
- </div>		
-<br /><br /> 
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/nii_new.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-		Nii Aryeetey<br />
-			Research Assistant<br />
-		B.A., Amherst College<br />
-	Email: <a style="color:#66e0ff;" href="mailto:aryeetey.3@osu.edu"><em>aryeetey dot 3 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Aryeetey.html" >Bio</a>
-		</div>
- </div>		
-	
-<br /><br /> 
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/KellyHiesche_BW_headshot.png" class="rounded" style="height:300px;width:250px;" />
-    </div>
-  Kelly Hiersche<br />
-Graduate Student<br />
-		B.S., Physics, Adelphi University<br />
-   	Email: <a style="color:#66e0ff;" href="mailto:hiersche.1@osu.edu"><em>hiersche dot 1 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Hiersche.html" >Bio</a>
-		</div>
- </div>	
-<br /><br /> 
-	    
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Laura.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	
-Laura Bradley<br />
-Graduate Student<br />
-	B.A. Psychology and M.A. Psychology, Marshall University<br />
-	Email: <a style="color:#66e0ff;" href="mailto:bradley.844@buckeyemail.osu.edu"><em>bradley dot 844 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_bradley.html" >Bio</a>
-		</div>
- </div>		
-<br /><br /> 
-	    
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/sophienew.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	
-Sophia Bibb<br />
-Graduate Student<br />
-		B.S.A, Neuroscience, UT Austin<br />
-	Email: <a style="color:#66e0ff;" href="mailto:bibb.3o@buckeyemail.osu.edu"><em>bibb dot 30 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Bibb.html" >Bio</a>
-		</div>
+    <!-- Row 2: Anna and Nii -->
+    <div class="pyramid-row">
+      <div class="person-card">
+        <img src="LabPictures/annaquatrale.jpg" alt="Anna Quatrale" />
+        <div class="person-info">
+          <strong>Anna Quatrale</strong><br />
+          Research Coordinator<br />
+          B.A., Psychology, SUNY Geneseo<br />
+          Email: <a href="mailto:quatrale.1@osu.edu"><em>quatrale dot 1 at osu dot edu</em></a><br />
+          <a href="zbios_Quatrale.html">Bio</a>
+        </div>
+      </div>
 
- </div>	
-<br /><br /> 
-	    
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Xinnan.jpg" class="rounded" style="height:300px;width:250px;" />
+      <div class="person-card">
+        <img src="LabPictures/nii_new.jpg" alt="Nii Aryeetey" />
+        <div class="person-info">
+          <strong>Nii Aryeetey</strong><br />
+          Research Assistant<br />
+          B.A., Amherst College<br />
+          Email: <a href="mailto:aryeetey.3@osu.edu"><em>aryeetey dot 3 at osu dot edu</em></a><br />
+          <a href="zbios_Aryeetey.html">Bio</a>
+        </div>
+      </div>
     </div>
-	
-Xinnan Wang<br />
-Graduate Student<br />
-	 M.S., Development Psychology, Sichuan University<br />
-	Email: <a style="color:#66e0ff;" href="mailto:wang.17192@buckeyemail.osu.edu"><em>wang dot 17192 at osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_wang.html" >Bio</a>
-		</div>
- </div>		
 
-<br /><br /> 
-	    
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/bonnie.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	
-Huiyu (Bonnie) Yang<br />
-Graduate Student<br />
-	Email: <a style="color:#66e0ff;" href="mailto:yang.7991@buckeyemail.osu.edu"><em>yang dot 7991 at buckeyemail dot osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Yang.html" >Bio</a>
-		</div>
- </div>		
-	    
-<br /><br /> 
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/LaurenR.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-   Lauren Rydel<br />
-		Undergraduate Research Assistant<br />
-	Neuroscience and Psychology Major<br />
-	Email: <a style="color:#66e0ff;" href="mailto:rydel.2@buckeyemail.osu.edu"><em>rydel dot 2 at buckeyemail dot osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_rydel.html" >Bio</a>
-		</div>		
- </div>		
+    <!-- Row 3: Kelly, Laura, Sophia, Xinnan, Huiyu -->
+    <div class="pyramid-row">
+      <div class="person-card">
+        <img src="LabPictures/KellyHiesche_BW_headshot.png" alt="Kelly Hiersche" />
+        <div class="person-info">
+          <strong>Kelly Hiersche</strong><br />
+          Graduate Student<br />
+          B.S., Physics, Adelphi University<br />
+          Email: <a href="mailto:hiersche.1@osu.edu"><em>hiersche dot 1 at osu dot edu</em></a><br />
+          <a href="zbios_Hiersche.html">Bio</a>
+        </div>
+      </div>
 
-<br /><br /> 
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/isabel.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-   Isabel Beck<br />
-		Undergraduate Research Assistant<br />
-	Neuroscience Major<br />
-	Email: <a style="color:#66e0ff;" href="mailto:beck.925@buckeyemail.osu.edu"><em>beck dot 925 at buckeyemail dot osu dot edu</em></a><br />
-	<a style="color:#66e0ff;" href="zbios_Beck.html" >Bio</a>
-		</div>		
- </div>		
-<br /><br /> 
-	    
- </div>	
-<br /><br /> 
-<div class="row padding justify-content-left">
-	<div class="col-md-4 align-self-start">
-		<h4 style="margin:auto;padding:10px 0 10px 0;">ALUMNI</h4>
+      <div class="person-card">
+        <img src="LabPictures/Laura.jpg" alt="Laura Bradley" />
+        <div class="person-info">
+          <strong>Laura Bradley</strong><br />
+          Graduate Student<br />
+          B.A. & M.A., Psychology, Marshall University<br />
+          Email: <a href="mailto:bradley.844@buckeyemail.osu.edu"><em>bradley dot 844 at osu dot edu</em></a><br />
+          <a href="zbios_bradley.html">Bio</a>
+        </div>
+      </div>
 
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Elena4Web.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-    Elana Schettini<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/mei.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-    Mei Jira<br />
-</div>
-<br />
+      <div class="person-card">
+        <img src="LabPictures/sophienew.jpeg" alt="Sophia Bibb" />
+        <div class="person-info">
+          <strong>Sophia Bibb</strong><br />
+          Graduate Student<br />
+          B.S.A., Neuroscience, UT Austin<br />
+          Email: <a href="mailto:bibb.30@buckeyemail.osu.edu"><em>bibb dot 30 at osu dot edu</em></a><br />
+          <a href="zbios_Bibb.html">Bio</a>
+        </div>
+      </div>
 
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/leah.jpg" class="rounded" style="height:300px;width:250px;" />
-</div>
-Leah DiRubio<br />
-</div>
-<br />
+      <div class="person-card">
+        <img src="LabPictures/Xinnan.jpg" alt="Xinnan Wang" />
+        <div class="person-info">
+          <strong>Xinnan Wang</strong><br />
+          Graduate Student<br />
+          M.S., Development Psychology, Sichuan University<br />
+          Email: <a href="mailto:wang.17192@buckeyemail.osu.edu"><em>wang dot 17192 at osu dot edu</em></a><br />
+          <a href="zbios_wang.html">Bio</a>
+        </div>
+      </div>
 
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/razan.jpg" class="rounded" style="height:300px;width:250px;" />
-</div>
-Razan Mirghani<br />
-</div>
-<br />
-	
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Adamheadshot.jpg" class="rounded" style="height:300px;width:250px;" />
-</div>
-Adam Culiver<br />
-</div>
-<br />		
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Jin.jpg" class="rounded" style="height:300px;width:250px;" />
-</div>
-Jin Li<br />
-</div>
-<br />	
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/ajuna.jpg" class="rounded" style="height:300px;width:250px;" />
-</div>
-Ajuna Mwesigye<br />
-</div>	
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Divya.jpeg" class="rounded" style="height:300px;width:250px;" />
-</div>
-<br />
-Divya Gopal<br />
-</div>
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/fiona_pic.jpeg" class="rounded" style="height:300px;width:250px;" />
+      <div class="person-card">
+        <img src="LabPictures/bonnie.jpeg" alt="Huiyu (Bonnie) Yang" />
+        <div class="person-info">
+          <strong>Huiyu (Bonnie) Yang</strong><br />
+          Graduate Student<br />
+          Email: <a href="mailto:yang.7991@buckeyemail.osu.edu"><em>yang dot 7991 at buckeyemail dot osu dot edu</em></a><br />
+          <a href="zbios_Yang.html">Bio</a>
+        </div>
+      </div>
     </div>
-	Fiona Molloy<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Patricia.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	Patricia Resnick<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/thumbnail_Profile.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	Alexander Olegnowicz<br />
-</div>	
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/HeatherHansencopy.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	Heather Hansen<br />
- </div>	
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/ReneeBrooks2.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-	Renee Brooks<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Maggie.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
- Maggie Beard<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/micah.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-  Micah Rhodes<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/eshwarcopy.png" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Eshwar Madishetti<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/nabb.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Carver Nabb<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/flanagan.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Justin Flanagan<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Lilly.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Lilly Lin<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Arman.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Arman Bordbar<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/athena.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Athena Lee Howell<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Rasul.jpeg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Amanie Rasul<br />
-</div>
-<br />
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/gokcen.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
-Yasemin Gokcen<br />
-</div>
-<br />
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/Luke4Web.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
- Luke Wisniewski<br />
-</div>
-	<br /><br />
-	<br />
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/nyeka.png" class="rounded" style="height250px;width:250px;" />
-    </div>
- Nyeka Sangster<br />
-</div>
-	<br /><br />
-	<br />
-	<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/andrew1.jpg" class="rounded" style="height:300px;width:250px;" />
-    </div>
- Andrew Sarmir<br />
-</div>
- </div>		
-<div class="row padding justify-content-left">
-    <div class="col-md-3 align-self-start">
-      <img src="LabPictures/brenden.png" class="rounded" style="height:300px;width:250px;" />
-    </div>
-  Brenden Dalton<br />
- </div>		
-<br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-	<center><a href="https://www.facebook.com/sayginlabOSU" target="_blank"><img src="newfacebook.png" width="22" height="22"/></a>
-	<a href="https://twitter.com/Zlab_OSU" target="_blank"><img src="twitter.png" width="20" height="20"/></a></center>
-  
-    </body>
-  </head>
+    <!-- Row 4: Lauren and Isabel -->
+    <div class="pyramid-row" style="justify-content: center; gap: 60px;">
+      <div class="person-card">
+        <img src="LabPictures/LaurenR.jpg" alt="Lauren Rydel" />
+        <div class="person-info">
+          <strong>Lauren Rydel</strong><br />
+          Undergraduate Research Assistant<br />
+          Neuroscience and Psychology Major<br />
+          Email: <a href="mailto:rydel.2@buckeyemail.osu.edu"><em>rydel dot 2 at buckeyemail dot osu dot edu</em></a><br />
+          <a href="zbios_rydel.html">Bio</a>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="LabPictures/isabel.jpeg" alt="Isabel Beck" />
+        <div class="person-info">
+          <strong>Isabel Beck</strong><br />
+          Undergraduate Research Assistant<br />
+          Neuroscience Major<br />
+          Email: <a href="mailto:beck.925@buckeyemail.osu.edu"><em>beck dot 925 at buckeyemail dot osu dot edu</em></a><br />
+          <a href="zbios_Beck.html">Bio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alumni Section -->
+  <div class="alumni-section">
+    <h2 class="alumni-title">ALUMNI</h2>
+    <div class="alumni-grid">
+      <div class="alumni-card">
+        <img src="LabPictures/Elena4Web.jpg" alt="Elana Schettini" />
+        <div>Elana Schettini</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/mei.jpg" alt="Mei Jira" />
+        <div>Mei Jira</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/leah.jpg" alt="Leah DiRubio" />
+        <div>Leah DiRubio</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/razan.jpg" alt="Razan Mirghani" />
+        <div>Razan Mirghani</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Adamheadshot.jpg" alt="Adam Culiver" />
+        <div>Adam Culiver</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Jin.jpg" alt="Jin Li" />
+        <div>Jin Li</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/ajuna.jpg" alt="Ajuna Mwesigye" />
+        <div>Ajuna Mwesigye</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Divya.jpeg" alt="Divya Gopal" />
+        <div>Divya Gopal</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/fiona_pic.jpeg" alt="Fiona Molloy" />
+        <div>Fiona Molloy</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Patricia.jpg" alt="Patricia Resnick" />
+        <div>Patricia Resnick</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/thumbnail_Profile.jpg" alt="Alexander Olegnowicz" />
+        <div>Alexander Olegnowicz</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/HeatherHansencopy.jpg" alt="Heather Hansen" />
+        <div>Heather Hansen</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/ReneeBrooks2.jpg" alt="Renee Brooks" />
+        <div>Renee Brooks</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Maggie.jpg" alt="Maggie Beard" />
+        <div>Maggie Beard</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/micah.jpg" alt="Micah Rhodes" />
+        <div>Micah Rhodes</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/eshwarcopy.png" alt="Eshwar Madishetti" />
+        <div>Eshwar Madishetti</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/nabb.jpeg" alt="Carver Nabb" />
+        <div>Carver Nabb</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/flanagan.jpeg" alt="Justin Flanagan" />
+        <div>Justin Flanagan</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Lilly.jpg" alt="Lilly Lin" />
+        <div>Lilly Lin</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Arman.jpg" alt="Arman Bordbar" />
+        <div>Arman Bordbar</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/athena.jpg" alt="Athena Lee Howell" />
+        <div>Athena Lee Howell</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Rasul.jpeg" alt="Amanie Rasul" />
+        <div>Amanie Rasul</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/gokcen.jpg" alt="Yasemin Gokcen" />
+        <div>Yasemin Gokcen</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/Luke4Web.jpg" alt="Luke Wisniewski" />
+        <div>Luke Wisniewski</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/nyeka.png" alt="Nyeka Sangster" />
+        <div>Nyeka Sangster</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/andrew1.jpg" alt="Andrew Sarmir" />
+        <div>Andrew Sarmir</div>
+      </div>
+      <div class="alumni-card">
+        <img src="LabPictures/brenden.png" alt="Brenden Dalton" />
+        <div>Brenden Dalton</div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
