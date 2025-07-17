@@ -169,7 +169,25 @@
       margin: 0 8px;
       vertical-align: middle;
     }
-  </style>
+  @media (max-width: 700px) {
+    .people-grid {
+      display: flex !important;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .person-card {
+      flex: 0 0 auto;
+      width: 200px;
+    }
+    .person-card img {
+      width: 200px;
+      height: 240px;
+    }
+  }
+</style>
 </head>
 <body>
 
